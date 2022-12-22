@@ -1,0 +1,55 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+int sum(int a, int b){
+	return a+b;
+}
+int sub(int a, int b){
+	return a-b;
+}
+int product(int a , int b){
+	return a*b;
+}
+int division(int a , int b){
+	return a/b;
+}
+int quotinent(int a , int b){
+	return a%b;
+}
+int main(){
+	int a,b,add,minse,multi,divide,mod;
+	cout<<"Enter two Number =";
+	cin>>a>>b;
+	add =sum(a,b);
+	cout<<"\nAddition="<<add;
+	minse =sub(a,b);
+	cout<<"\nSubstraction="<<minse;
+	multi = product(a,b);
+	cout<<"\nProduct="<<multi;
+	divide =division(a,b);
+	cout<<"\nDivision="<<divide;
+	mod =quotinent(a,b);
+	cout<<"\nQuotinent="<<mod<<endl;
+	
+	cout<<"\nSquare Root Of Sum=";
+	cout<<sqrt(sum(a,b));
+	cout<<"\nSquare Root Of Sub=";
+	cout<<sqrt(sub(a,b));
+	cout<<"\nSquare Root Of Product=";
+	cout<<sqrt(product(a,b));
+	cout<<"\nSquare Root Of Division=";
+	cout<<sqrt(division(a,b));
+	cout<<"\nSquare Root Of Fist Value ="<<sqrt(a);
+	cout<<"\nSquare Root Of 2nd Value ="<<sqrt(b)<<endl;
+	
+	cout<<"\nLog Of Sum=";
+	cout<<log(sum(a,b));
+	cout<<"\nLog Of Sub=";
+	cout<<log(sub(a,b));
+	cout<<"\nLog Of Product=";
+	cout<<log(product(a,b));
+	cout<<"\nLog Of Division=";
+	cout<<log(division(a,b));
+	cout<<"\nLog Of Fist Value ="<<log(a);
+	cout<<"\nLog Of 2nd Value ="<<log(b);
+}
